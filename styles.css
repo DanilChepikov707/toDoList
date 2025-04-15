@@ -1,0 +1,168 @@
+body {
+  background: #f5f5f5;
+  font-family: Inter;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  color: #000;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 80px;
+}
+
+.container {
+  width: 594px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 8px 35px 0px rgba(0, 0, 0, 0.16);
+  margin: 0 auto;
+  margin-top: 33px;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+  border-bottom: solid 1px #dee2e6;
+}
+
+.input {
+  width: 356px;
+  height: 38px;
+  border-radius: 4px;
+  border: 1px solid var(--Stroke-Input, #ced4da);
+  background: var(---Gray-White, #fff);
+}
+
+.input::placeholder {
+  color: #54595e;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  align-items: center;
+  padding: 9px 32px 8px 13px;
+}
+
+.btn {
+  display: flex;
+  width: 166px;
+  height: 39px;
+  padding: 10px 16px;
+  align-items: center;
+  flex-shrink: 0;
+
+  border-radius: 4px;
+  background: #272829;
+
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  justify-content: center;
+  font-family: Inter;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task__text {
+  color: #54595e;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  width: 100%;
+  margin-left: 16px;
+}
+
+.task__text.completed {
+  color: #54595e;
+  text-decoration: line-through;
+}
+
+.remove__btn {
+  width: 16px;
+  height: 21px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+.tasks {
+  padding: 32px 24px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.buttons__container {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0px 0px 16px 16px;
+  background: #f5f5f5;
+  padding: 18px 24px;
+}
+
+.btn__delete,
+.btn__deleteall {
+  border-radius: 4px;
+  background: #6c757d;
+  width: 214px;
+  padding: 10px 16px;
+  border: 0;
+
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Inter;
+}
+
+.btn__deleteall {
+  width: 131px;
+  background: #dc3545;
+}
+
+.buttons__task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 16px;
+}
+
+.edit__btn {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.edit__btn:focus {
+  outline: none;
+}
+
+.editing .edit__input {
+  flex: 1;
+  width: 450px;
+  
+}
